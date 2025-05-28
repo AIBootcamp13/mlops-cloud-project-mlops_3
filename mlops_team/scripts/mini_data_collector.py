@@ -194,6 +194,7 @@ def main():
         df_to_save.to_csv(CSV_FILE_PATH, index=False, encoding='utf-8-sig')
         print(f"데이터가 {CSV_FILE_PATH} 에 저장/업데이트 되었습니다.")
 
+
 if __name__ == "__main__":
     # 지금 당장 2~3번 실행해서 데이터 몇 줄이라도 모으자!
     # 예: 1시간 간격으로 3번 실행
