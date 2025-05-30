@@ -1,20 +1,15 @@
 FROM python:3.9-slim
 
-WORKDIR /app
+WORKDIR /mlops_team
 
-COPY requirements.txt /app/requirements.txt
+COPY requirements.txt /mlops_team/requirements.txt
 
-RUN pip install --no-cache-dir -r /app/requirements.txt
+RUN apt-get update && apt-get install -y libgomp1
+RUN pip install --no-cache-dir -r /mlops_team/requirements.txt
 
-
-# 도커 이미지 빌드 할 때 모든 파일, 하위 폴더를 복사(민감한 정보 유출 가능성 있으니 주의)
-# TODO: 나중에 수정 고려하기
-# COPY . .
-COPY . /app/
-
+COPY . /mlops_team/
 
 # fastapi 기본 포트
-EXPOSE 8000
-
+EXPOSE 8000 
 
 CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]

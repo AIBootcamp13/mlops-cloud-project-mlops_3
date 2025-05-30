@@ -7,3 +7,6 @@ xgboost
 catboost
 numpy
 mlflow
+scipy
+s3fs
+python-dotenv

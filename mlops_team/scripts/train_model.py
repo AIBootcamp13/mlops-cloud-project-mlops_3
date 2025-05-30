@@ -12,18 +12,29 @@ from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, E
 from lightgbm import LGBMRegressor
 from xgboost import XGBRegressor
 from catboost import CatBoostRegressor
+import argparse
+import tempfile
 
 
 class Tree_Models:
     def __init__(self, data_path: str, experiment_name: str = "weather_regression"):
         self.data_path = data_path
         self.experiment_name = experiment_name
+        
+        # MLflow 서버 설정 추가
+        mlflow.set_tracking_uri("http://localhost:5001")
+        print(f"MLflow tracking URI: {mlflow.get_tracking_uri()}")
+        
+        # MLflow 실험 설정
         mlflow.set_experiment(self.experiment_name)
+        print(f"Current experiment: {mlflow.get_experiment_by_name(self.experiment_name)}")
+        
         # 트리 모델 정의
+        tmp_dir = tempfile.mkdtemp()
         self.models = {
             'LightGBM': LGBMRegressor(n_estimators=100, learning_rate=0.1),
             'XGBoost': XGBRegressor(n_estimators=100, learning_rate=0.1, verbosity=0),
-            'CatBoost': CatBoostRegressor(n_estimators=100, learning_rate=0.1, verbose=0),
+            'CatBoost': CatBoostRegressor(n_estimators=100, learning_rate=0.1, train_dir=tmp_dir, logging_level='Silent'),
             'RandomForest': RandomForestRegressor(n_estimators=100),
             'GradientBoosting': GradientBoostingRegressor(n_estimators=100, learning_rate=0.1),
             'ExtraTrees': ExtraTreesRegressor(n_estimators=100),
@@ -31,17 +42,27 @@ class Tree_Models:
 
 
     def load_data(self) -> Tuple[pd.DataFrame, pd.Series, pd.DataFrame, pd.Series]:
+        """데이터를 로드하고 전처리합니다."""
+        # 데이터 로드
         df = pd.read_csv(self.data_path)
-        df = df.sort_values(by='측정시간')  # 시계열 순서 유지
-        split_index = int(len(df) * 0.8)
-
-        train_df = df.iloc[:split_index]
-        val_df = df.iloc[split_index:]
-
-        X_train = train_df[['현재기온', '현재습도', '현재풍속', '시각']]
-        y_train = train_df['1시간뒤기온']
-        X_val = val_df[['현재기온', '현재습도', '현재풍속', '시각']]
-        y_val = val_df['1시간뒤기온']
+        
+        # 시계열 정렬
+        df = df.sort_values(by=['year', 'month', 'day', 'hour'])
+        
+        # target_temp 컬럼 생성 (1시간 뒤 온도)
+        df['target_temp'] = df['Temperature'].shift(-1)
+        df = df.dropna(subset=['target_temp'])
+        
+        # 학습/검증 데이터 분할
+        train = df.iloc[:int(len(df) * 0.8)]
+        val = df.iloc[int(len(df) * 0.8):]
+        
+        # 특성과 타겟 분리
+        X_train = train.drop(columns=['Temperature', 'target_temp'])
+        y_train = train['target_temp']
+        X_val = val.drop(columns=['Temperature', 'target_temp'])
+        y_val = val['target_temp']
+        
         return X_train, y_train, X_val, y_val
 
 
@@ -60,12 +81,12 @@ class Tree_Models:
             training_times[name] = training_time
             # 검증 데이터로 RMSE 계산
             preds = model.predict(X_val)
-            rmse = mean_squared_error(y_val, preds, squared=False)
+            rmse = mean_squared_error(y_val, preds) ** 0.5
             model_scores.append({'Model': name, 'RMSE': rmse, 'Training_Time': training_time, 'Model_Obj': model})
             print(f"{name} training completed in {training_time:.2f} seconds, RMSE: {rmse:.4f}")
             trained_models[name] = model
 
-            # === MLflow에 실험 기록 ===
+            # MLflow에 실험 기록
             with mlflow.start_run(run_name=name):
                 mlflow.log_param("model_name", name)
                 mlflow.log_param("n_estimators", getattr(model, 'n_estimators', None) or getattr(model, 'max_iter', None))
@@ -87,6 +108,8 @@ class Tree_Models:
 
     def evaluate_models(self) -> pd.DataFrame:
         _, _, X_val, y_val = self.load_data()
+        print(f"[DEBUG] 평가 시 feature 목록: {self.X_cols}")
+        X_val = X_val[self.X_cols]
         results = []
         # top_models만 평가
         models_to_eval = self.top_models if hasattr(self, 'top_models') else self.models.keys()
@@ -95,7 +118,10 @@ class Tree_Models:
         for idx, name in enumerate(models_to_eval, 1):
             print(f"{idx}/{total_models}: {name}...")
             # MLflow에서 모델 불러오기
-            model_uri = f"runs:/{mlflow.search_runs(filter_string=f'tags.mlflow.runName = \"{name}\"', order_by=['metrics.rmse ASC']).iloc[0].run_id}/{name}_model"
+            filter_str = f"tags.mlflow.runName = '{name}'"
+            run_df = mlflow.search_runs(filter_string=filter_str, order_by=['metrics.rmse ASC'])
+            run_id = run_df.iloc[0].run_id
+            model_uri = f"runs:/{run_id}/{name}_model"
             model = mlflow.sklearn.load_model(model_uri)
             preds = model.predict(X_val)
             rmse = mean_squared_error(y_val, preds, squared=False)
@@ -112,8 +138,8 @@ class Tree_Models:
         print(top_3_models)
         
         # 평가 결과 저장
-        results_df.to_csv('evaluation_results.csv', index=False)
-        print(f"\n✅ Evaluation results saved to: evaluation_results.csv")
+        results_df.to_csv('scripts/evaluation_results.csv', index=False)
+        print(f"\n✅ Evaluation results saved to: scripts/evaluation_results.csv")
         return results_df
 
     def get_top_models(self, n: int = 3) -> List[str]:
@@ -122,9 +148,16 @@ class Tree_Models:
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--data_path', type=str, default=None, help='학습에 사용할 데이터 파일 경로')
+    args = parser.parse_args()
+
     # 데이터 경로 설정
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    data_path = os.path.join(base_dir, "data", "weather_data.csv")
+    if args.data_path:
+        data_path = args.data_path
+    else:
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        data_path = os.path.join(base_dir, "data", "weather_data.csv")
     
     # 모델 학습 및 평가
     tree_models = Tree_Models(data_path)
