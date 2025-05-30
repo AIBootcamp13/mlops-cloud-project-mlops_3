@@ -1,3 +1,31 @@
+# OS 특정 파일
 .DS_Store
+
+# 파이썬 캐시 및 컴파일 파일
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 가상환경 폴더
+.venv/
+venv/
+env/
+
+# 개발/탐색용 노트북
+notebooks/
+
+# 로컬 데이터 (S3 등 외부에서 가져올 예정이라면... 고려해보자)
+data/
+
+# 기타 빌드 결과물이나 임시 파일
+*.zip
+*.tar.gz
+
+# Git 관련 파일
+.git
+.gitignore
+.dockerignore
+
+# 환경 파일
 .env
