@@ -1,0 +1,20 @@
+FROM python:3.9-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libgomp1 \
+    libomp-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY mlops_team/requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+COPY mlops_team/scripts /app/scripts
+COPY mlops_team/utils /app/utils
+
+COPY ./.env /app/.env 
+
+COPY mlops_team/src /app/src
+
+CMD ["python", "scripts/pipeline.py"]

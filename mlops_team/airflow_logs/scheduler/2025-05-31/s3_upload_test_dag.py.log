@@ -1,0 +1,504 @@
+[2025-05-31T00:00:04.073+0000] {processor.py:161} INFO - Started process (PID=1690) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:00:04.074+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:00:04.076+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:00:04.076+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:00:04.087+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:00:04.105+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:00:04.104+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:00:04.114+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:00:04.114+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:00:04.126+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.060 seconds
+[2025-05-31T00:00:34.691+0000] {processor.py:161} INFO - Started process (PID=1694) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:00:34.692+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:00:34.694+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:00:34.694+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:00:34.703+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:00:34.717+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:00:34.717+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:00:34.725+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:00:34.725+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:00:34.736+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.051 seconds
+[2025-05-31T00:01:05.320+0000] {processor.py:161} INFO - Started process (PID=1698) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:01:05.322+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:01:05.323+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:01:05.323+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:01:05.332+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:01:05.348+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:01:05.347+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:01:05.355+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:01:05.355+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:01:05.366+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.052 seconds
+[2025-05-31T00:01:36.081+0000] {processor.py:161} INFO - Started process (PID=1702) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:01:36.083+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:01:36.085+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:01:36.085+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:01:36.094+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:01:36.108+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:01:36.108+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:01:36.116+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:01:36.115+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:01:36.127+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.051 seconds
+[2025-05-31T00:02:06.598+0000] {processor.py:161} INFO - Started process (PID=1706) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:02:06.600+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:02:06.602+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:02:06.602+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:02:06.611+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:02:06.625+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:02:06.625+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:02:06.632+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:02:06.632+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:02:06.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.057 seconds
+[2025-05-31T00:02:37.215+0000] {processor.py:161} INFO - Started process (PID=1710) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:02:37.217+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:02:37.219+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:02:37.218+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:02:37.228+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:02:37.242+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:02:37.241+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:02:37.249+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:02:37.249+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:02:37.260+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.050 seconds
+[2025-05-31T00:03:07.951+0000] {processor.py:161} INFO - Started process (PID=1714) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:03:07.953+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:03:07.955+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:03:07.954+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:03:07.963+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:03:07.981+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:03:07.981+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:03:07.989+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:03:07.988+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:03:08.000+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.057 seconds
+[2025-05-31T00:03:38.592+0000] {processor.py:161} INFO - Started process (PID=1718) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:03:38.594+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:03:38.596+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:03:38.596+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:03:38.605+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:03:38.619+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:03:38.618+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:03:38.626+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:03:38.626+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:03:38.637+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.050 seconds
+[2025-05-31T00:04:09.443+0000] {processor.py:161} INFO - Started process (PID=1722) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:04:09.444+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:04:09.446+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:04:09.446+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:04:09.458+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:04:09.475+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:04:09.475+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:04:09.482+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:04:09.482+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:04:09.508+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.071 seconds
+[2025-05-31T00:04:40.124+0000] {processor.py:161} INFO - Started process (PID=1726) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:04:40.127+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:04:40.128+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:04:40.128+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:04:40.137+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:04:40.151+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:04:40.151+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:04:40.159+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:04:40.159+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:04:40.170+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.052 seconds
+[2025-05-31T00:05:10.925+0000] {processor.py:161} INFO - Started process (PID=1730) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:05:10.926+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:05:10.928+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:05:10.928+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:05:10.938+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:05:10.953+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:05:10.953+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:05:10.961+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:05:10.961+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:05:10.975+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.056 seconds
+[2025-05-31T00:05:41.667+0000] {processor.py:161} INFO - Started process (PID=1734) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:05:41.668+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:05:41.670+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:05:41.670+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:05:41.678+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:05:41.693+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:05:41.693+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:05:41.699+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:05:41.699+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:05:41.711+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.049 seconds
+[2025-05-31T00:06:12.405+0000] {processor.py:161} INFO - Started process (PID=1738) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:06:12.407+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:06:12.408+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:06:12.408+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:06:12.418+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:06:12.432+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:06:12.432+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:06:12.439+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:06:12.439+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:06:12.451+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.052 seconds
+[2025-05-31T00:06:43.031+0000] {processor.py:161} INFO - Started process (PID=1742) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:06:43.032+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:06:43.033+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:06:43.033+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:06:43.042+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:06:43.056+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:06:43.056+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:06:43.065+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:06:43.064+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:06:43.078+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.053 seconds
+[2025-05-31T00:07:13.756+0000] {processor.py:161} INFO - Started process (PID=1746) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:07:13.757+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:07:13.759+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:07:13.759+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:07:13.769+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:07:13.784+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:07:13.784+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:07:13.793+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:07:13.793+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:07:13.806+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.056 seconds
+[2025-05-31T00:07:44.389+0000] {processor.py:161} INFO - Started process (PID=1750) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:07:44.391+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:07:44.392+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:07:44.392+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:07:44.401+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:07:44.415+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:07:44.414+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:07:44.423+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:07:44.422+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:07:44.436+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.055 seconds
+[2025-05-31T00:08:15.120+0000] {processor.py:161} INFO - Started process (PID=1754) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:08:15.122+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:08:15.124+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:08:15.124+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:08:15.133+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:08:15.147+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:08:15.147+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:08:15.154+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:08:15.154+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:08:15.166+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.052 seconds
+[2025-05-31T00:08:45.753+0000] {processor.py:161} INFO - Started process (PID=1758) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:08:45.755+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:08:45.757+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:08:45.757+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:08:45.765+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:08:45.780+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:08:45.780+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:08:45.787+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:08:45.786+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:08:45.798+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.052 seconds
+[2025-05-31T00:09:16.472+0000] {processor.py:161} INFO - Started process (PID=1762) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:09:16.474+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:09:16.475+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:09:16.475+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:09:16.484+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:09:16.499+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:09:16.499+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:09:16.506+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:09:16.506+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:09:16.519+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.053 seconds
+[2025-05-31T00:09:47.132+0000] {processor.py:161} INFO - Started process (PID=1766) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:09:47.134+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:09:47.136+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:09:47.136+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:09:47.145+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:09:47.158+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:09:47.158+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:09:47.166+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:09:47.166+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:09:47.181+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.055 seconds
+[2025-05-31T00:10:17.853+0000] {processor.py:161} INFO - Started process (PID=1770) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:10:17.854+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:10:17.858+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:10:17.857+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:10:17.868+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:10:17.884+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:10:17.884+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:10:17.892+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:10:17.891+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:10:17.904+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.057 seconds
+[2025-05-31T00:10:48.532+0000] {processor.py:161} INFO - Started process (PID=1774) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:10:48.533+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:10:48.535+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:10:48.534+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:10:48.543+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:10:48.557+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:10:48.557+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:10:48.564+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:10:48.564+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:10:48.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.049 seconds
+[2025-05-31T00:11:19.261+0000] {processor.py:161} INFO - Started process (PID=1778) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:11:19.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:11:19.262+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:11:19.262+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:11:19.268+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:11:19.277+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:11:19.277+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:11:19.282+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:11:19.282+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:11:19.294+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.036 seconds
+[2025-05-31T00:11:50.401+0000] {processor.py:161} INFO - Started process (PID=1782) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:11:50.402+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:11:50.403+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:11:50.403+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:11:50.409+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:11:50.420+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:11:50.420+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:11:50.428+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:11:50.428+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:11:50.441+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.044 seconds
+[2025-05-31T00:12:20.581+0000] {processor.py:161} INFO - Started process (PID=1786) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:12:20.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:12:20.583+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:12:20.583+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:12:20.589+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:12:20.600+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:12:20.600+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:12:20.607+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:12:20.607+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:12:20.620+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.042 seconds
+[2025-05-31T00:12:51.222+0000] {processor.py:161} INFO - Started process (PID=1790) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:12:51.224+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:12:51.225+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:12:51.225+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:12:51.232+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:12:51.242+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:12:51.242+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:12:51.248+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:12:51.248+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:12:51.261+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.044 seconds
+[2025-05-31T00:13:21.898+0000] {processor.py:161} INFO - Started process (PID=1794) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:13:21.900+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:13:21.902+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:13:21.902+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:13:21.911+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:13:21.926+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:13:21.926+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:13:21.934+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:13:21.933+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:13:21.946+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.054 seconds
+[2025-05-31T00:13:52.430+0000] {processor.py:161} INFO - Started process (PID=1798) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:13:52.432+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:13:52.433+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:13:52.433+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:13:52.441+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:13:52.455+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:13:52.455+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:13:52.462+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:13:52.462+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:13:52.473+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.048 seconds
+[2025-05-31T00:14:23.093+0000] {processor.py:161} INFO - Started process (PID=1802) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:14:23.096+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:14:23.098+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:14:23.097+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:14:23.106+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:14:23.120+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:14:23.120+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:14:23.128+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:14:23.128+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:14:23.140+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.053 seconds
+[2025-05-31T00:14:53.625+0000] {processor.py:161} INFO - Started process (PID=1806) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:14:53.627+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:14:53.629+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:14:53.629+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:14:53.638+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:14:53.653+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:14:53.653+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:14:53.660+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:14:53.660+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:14:53.672+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.052 seconds
+[2025-05-31T00:15:24.065+0000] {processor.py:161} INFO - Started process (PID=1810) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:15:24.067+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:15:24.071+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:15:24.070+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:15:24.080+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:15:24.093+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:15:24.093+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:15:24.100+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:15:24.100+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:15:24.113+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.056 seconds
+[2025-05-31T00:15:54.759+0000] {processor.py:161} INFO - Started process (PID=1814) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:15:54.763+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:15:54.766+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:15:54.765+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:15:54.782+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:15:54.796+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:15:54.796+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:15:54.804+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:15:54.804+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:15:54.815+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.064 seconds
+[2025-05-31T00:16:25.359+0000] {processor.py:161} INFO - Started process (PID=1818) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:16:25.360+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:16:25.361+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:16:25.361+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:16:25.381+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:16:25.394+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:16:25.394+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:16:25.401+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:16:25.400+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:16:25.411+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.086 seconds
+[2025-05-31T00:16:55.710+0000] {processor.py:161} INFO - Started process (PID=1822) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:16:55.711+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:16:55.713+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:16:55.713+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:16:55.722+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:16:55.736+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:16:55.735+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:16:55.742+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:16:55.742+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:16:55.754+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.051 seconds
+[2025-05-31T00:17:26.358+0000] {processor.py:161} INFO - Started process (PID=1826) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:17:26.359+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:17:26.361+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:17:26.360+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:17:26.368+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:17:26.380+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:17:26.380+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:17:26.387+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:17:26.386+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:17:26.399+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.046 seconds
+[2025-05-31T00:17:56.937+0000] {processor.py:161} INFO - Started process (PID=1830) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:17:56.939+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:17:56.941+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:17:56.941+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:17:56.949+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:17:56.963+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:17:56.963+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:17:56.970+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:17:56.970+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:17:56.982+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.055 seconds
+[2025-05-31T00:18:27.579+0000] {processor.py:161} INFO - Started process (PID=1834) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:18:27.581+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:18:27.583+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:18:27.583+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:18:27.592+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:18:27.606+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:18:27.606+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:18:27.613+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:18:27.613+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:18:27.625+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.052 seconds
+[2025-05-31T00:18:58.014+0000] {processor.py:161} INFO - Started process (PID=1838) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:18:58.019+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:18:58.021+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:18:58.020+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:18:58.030+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:18:58.045+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:18:58.045+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:18:58.052+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:18:58.052+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:18:58.063+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.056 seconds
+[2025-05-31T00:19:28.779+0000] {processor.py:161} INFO - Started process (PID=1842) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:19:28.780+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:19:28.782+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:19:28.782+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:19:28.791+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:19:28.806+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:19:28.805+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:19:28.813+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:19:28.813+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:19:28.826+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.053 seconds
+[2025-05-31T00:19:59.431+0000] {processor.py:161} INFO - Started process (PID=1846) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:19:59.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:19:59.435+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:19:59.434+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:19:59.443+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:19:59.457+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:19:59.457+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:19:59.465+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:19:59.465+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:19:59.477+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.053 seconds
+[2025-05-31T00:20:30.205+0000] {processor.py:161} INFO - Started process (PID=1850) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:20:30.206+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:20:30.208+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:20:30.207+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:20:30.216+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:20:30.230+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:20:30.229+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:20:30.237+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:20:30.237+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:20:30.250+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.052 seconds
+[2025-05-31T00:21:00.875+0000] {processor.py:161} INFO - Started process (PID=1854) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:21:00.878+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:21:00.881+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:21:00.880+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:21:00.889+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:21:00.904+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:21:00.904+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:21:00.911+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:21:00.911+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:21:00.922+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.053 seconds
+[2025-05-31T00:21:31.521+0000] {processor.py:161} INFO - Started process (PID=1858) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:21:31.523+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:21:31.525+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:21:31.525+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:21:31.534+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:21:31.549+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:21:31.548+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:21:31.556+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:21:31.556+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:21:31.567+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.052 seconds
+[2025-05-31T00:22:02.039+0000] {processor.py:161} INFO - Started process (PID=1862) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:22:02.040+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:22:02.041+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:22:02.040+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:22:02.045+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:22:02.054+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:22:02.054+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:22:02.060+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:22:02.060+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:22:02.070+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.034 seconds
+[2025-05-31T00:22:32.610+0000] {processor.py:161} INFO - Started process (PID=1866) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:22:32.615+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:22:32.617+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:22:32.617+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:22:32.629+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:22:32.645+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:22:32.645+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:22:32.654+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:22:32.654+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:22:32.668+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.063 seconds
+[2025-05-31T00:23:03.156+0000] {processor.py:161} INFO - Started process (PID=1870) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:23:03.159+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:23:03.161+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:23:03.160+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:23:03.174+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:23:03.195+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:23:03.194+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:23:03.206+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:23:03.206+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:23:03.221+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.073 seconds
+[2025-05-31T00:23:33.817+0000] {processor.py:161} INFO - Started process (PID=1874) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:23:33.820+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:23:33.821+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:23:33.821+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:23:33.831+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:23:33.846+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:23:33.846+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:23:33.854+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:23:33.854+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:23:33.866+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.054 seconds
+[2025-05-31T00:24:04.312+0000] {processor.py:161} INFO - Started process (PID=1878) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:24:04.315+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:24:04.317+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:24:04.317+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:24:04.326+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:24:04.339+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:24:04.339+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:24:04.347+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:24:04.346+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:24:04.359+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.053 seconds
+[2025-05-31T00:24:34.512+0000] {processor.py:161} INFO - Started process (PID=1882) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:24:34.513+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:24:34.515+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:24:34.515+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:24:34.525+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:24:34.538+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:24:34.537+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:24:34.545+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:24:34.545+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:24:34.556+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.050 seconds
+[2025-05-31T00:25:06.011+0000] {processor.py:161} INFO - Started process (PID=1886) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:25:06.015+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:25:06.017+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:25:06.016+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:25:06.026+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:25:06.039+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:25:06.039+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:25:06.046+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:25:06.046+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:25:06.057+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.052 seconds
+[2025-05-31T00:25:36.620+0000] {processor.py:161} INFO - Started process (PID=1890) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:25:36.624+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:25:36.627+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:25:36.627+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:25:36.637+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:25:36.651+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:25:36.651+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:25:36.658+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:25:36.658+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:25:36.670+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.056 seconds
+[2025-05-31T00:26:07.358+0000] {processor.py:161} INFO - Started process (PID=1894) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:26:07.362+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:26:07.363+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:26:07.363+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:26:07.381+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:26:07.404+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:26:07.404+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:26:07.411+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:26:07.410+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:26:07.421+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.070 seconds
+[2025-05-31T00:26:37.980+0000] {processor.py:161} INFO - Started process (PID=1898) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:26:37.982+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:26:37.984+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:26:37.984+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:26:37.993+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:26:38.010+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:26:38.009+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:26:38.018+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:26:38.018+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:26:38.031+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.057 seconds
+[2025-05-31T00:27:08.616+0000] {processor.py:161} INFO - Started process (PID=1902) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:27:08.617+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:27:08.619+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:27:08.619+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:27:08.628+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:27:08.643+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:27:08.643+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:27:08.651+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:27:08.651+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:27:08.663+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.053 seconds
+[2025-05-31T00:27:39.349+0000] {processor.py:161} INFO - Started process (PID=1906) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:27:39.350+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:27:39.352+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:27:39.352+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:27:39.361+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:27:39.376+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:27:39.376+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:27:39.383+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:27:39.383+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:27:39.396+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.053 seconds
+[2025-05-31T00:28:10.081+0000] {processor.py:161} INFO - Started process (PID=1910) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:28:10.083+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:28:10.084+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:28:10.084+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:28:10.089+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:28:10.099+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:28:10.099+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:28:10.104+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:28:10.104+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:28:10.113+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.035 seconds
+[2025-05-31T00:28:40.572+0000] {processor.py:161} INFO - Started process (PID=1914) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:28:40.574+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:28:40.576+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:28:40.575+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:28:40.584+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:28:40.599+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:28:40.599+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:28:40.606+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:28:40.606+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:28:40.617+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.053 seconds
+[2025-05-31T00:29:11.341+0000] {processor.py:161} INFO - Started process (PID=1918) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:29:11.344+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:29:11.346+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:29:11.345+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:29:11.355+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:29:11.368+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:29:11.368+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:29:11.375+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:29:11.375+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:29:11.386+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.050 seconds
+[2025-05-31T00:29:41.854+0000] {processor.py:161} INFO - Started process (PID=1922) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:29:41.856+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:29:41.858+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:29:41.858+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:29:41.867+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:29:41.881+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:29:41.881+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:29:41.889+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:29:41.889+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:29:41.901+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.052 seconds
+[2025-05-31T00:30:12.587+0000] {processor.py:161} INFO - Started process (PID=1926) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:30:12.590+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:30:12.591+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:30:12.591+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:30:12.599+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:30:12.613+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:30:12.613+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:30:12.619+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:30:12.619+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:30:12.645+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.063 seconds
+[2025-05-31T00:30:43.413+0000] {processor.py:161} INFO - Started process (PID=1930) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:30:43.417+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:30:43.419+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:30:43.418+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:30:43.428+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:30:43.442+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:30:43.441+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:30:43.449+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:30:43.449+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:30:43.462+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.054 seconds
+[2025-05-31T00:31:14.021+0000] {processor.py:161} INFO - Started process (PID=1934) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:31:14.027+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:31:14.029+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:31:14.028+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:31:14.038+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:31:14.051+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:31:14.051+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:31:14.058+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:31:14.058+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:31:14.070+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.056 seconds
+[2025-05-31T00:31:44.634+0000] {processor.py:161} INFO - Started process (PID=1938) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:31:44.636+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:31:44.638+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:31:44.638+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:31:44.647+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:31:44.661+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:31:44.660+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:31:44.668+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:31:44.668+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:31:44.689+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.059 seconds
+[2025-05-31T00:32:15.385+0000] {processor.py:161} INFO - Started process (PID=1942) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:32:15.388+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:32:15.389+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:32:15.389+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:32:15.398+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:32:15.411+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:32:15.411+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:32:15.418+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:32:15.418+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:32:15.430+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.051 seconds
+[2025-05-31T00:32:46.131+0000] {processor.py:161} INFO - Started process (PID=1946) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:32:46.133+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:32:46.135+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:32:46.134+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:32:46.144+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:32:46.162+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:32:46.162+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:32:46.170+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:32:46.170+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:32:46.197+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.070 seconds
+[2025-05-31T00:33:16.777+0000] {processor.py:161} INFO - Started process (PID=1950) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:33:16.781+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:33:16.782+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:33:16.782+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:33:16.791+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:33:16.805+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:33:16.805+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:33:16.814+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:33:16.814+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:33:16.827+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.056 seconds
+[2025-05-31T00:33:47.497+0000] {processor.py:161} INFO - Started process (PID=1954) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:33:47.500+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:33:47.502+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:33:47.502+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:33:47.511+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:33:47.526+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:33:47.526+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:33:47.533+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:33:47.533+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:33:47.545+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.053 seconds
+[2025-05-31T00:34:18.219+0000] {processor.py:161} INFO - Started process (PID=1958) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:34:18.222+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:34:18.224+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:34:18.224+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:34:18.234+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:34:18.250+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:34:18.250+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:34:18.260+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:34:18.260+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:34:18.272+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.059 seconds
+[2025-05-31T00:34:48.930+0000] {processor.py:161} INFO - Started process (PID=1962) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:34:48.932+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:34:48.934+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:34:48.934+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:34:48.943+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:34:48.957+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:34:48.957+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:34:48.965+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:34:48.965+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:34:48.979+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.054 seconds
+[2025-05-31T00:35:19.551+0000] {processor.py:161} INFO - Started process (PID=1966) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:35:19.555+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:35:19.557+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:35:19.556+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:35:19.565+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:35:19.579+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:35:19.579+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:35:19.587+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:35:19.587+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:35:19.601+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.057 seconds
+[2025-05-31T00:35:50.169+0000] {processor.py:161} INFO - Started process (PID=1970) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:35:50.171+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:35:50.175+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:35:50.174+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:35:50.189+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:35:50.211+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:35:50.211+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:35:50.220+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:35:50.219+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:35:50.235+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.074 seconds
+[2025-05-31T00:36:20.807+0000] {processor.py:161} INFO - Started process (PID=1974) to work on /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:36:20.810+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3_upload_test_dag.py for tasks to queue
+[2025-05-31T00:36:20.812+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:36:20.812+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:36:20.820+0000] {processor.py:840} INFO - DAG(s) 's3_upload_test_dag' retrieved from /opt/airflow/dags/s3_upload_test_dag.py
+[2025-05-31T00:36:20.834+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:36:20.833+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-31T00:36:20.842+0000] {logging_mixin.py:188} INFO - [2025-05-31T00:36:20.842+0000] {dag.py:3954} INFO - Setting next_dagrun for s3_upload_test_dag to None, run_after=None
+[2025-05-31T00:36:20.854+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3_upload_test_dag.py took 0.052 seconds

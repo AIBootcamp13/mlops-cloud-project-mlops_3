@@ -2,3 +2,13 @@ fastapi
 uvicorn[standard]
 pandas
 scikit-learn
+python-dotenv 
+s3fs 
+pyarrow 
+lightgbm
+xgboost
+catboost
+numpy
+mlflow
+scipy
+boto3

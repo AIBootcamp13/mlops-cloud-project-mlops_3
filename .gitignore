@@ -1,4 +1,4 @@
-.DS_Store
+
 .env
 
 # Git 관련 파일
@@ -15,8 +15,7 @@ __pycache__/
 # OS 특정 파일
 .DS_Store
 
-# 개발/탐색용 노트북
-notebooks/
+notebook/
 
 # 로컬 데이터 (S3 등 외부에서 가져올 예정이라면... 고려해보자)
 # data/

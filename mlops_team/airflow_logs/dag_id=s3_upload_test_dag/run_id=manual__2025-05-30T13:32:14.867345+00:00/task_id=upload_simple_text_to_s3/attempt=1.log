@@ -1,0 +1,22 @@
+[2025-05-30T13:32:16.852+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-30T13:32:16.857+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: s3_upload_test_dag.upload_simple_text_to_s3 manual__2025-05-30T13:32:14.867345+00:00 [queued]>
+[2025-05-30T13:32:16.859+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: s3_upload_test_dag.upload_simple_text_to_s3 manual__2025-05-30T13:32:14.867345+00:00 [queued]>
+[2025-05-30T13:32:16.859+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-05-30T13:32:16.864+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): upload_simple_text_to_s3> on 2025-05-30 13:32:14.867345+00:00
+[2025-05-30T13:32:16.866+0000] {standard_task_runner.py:63} INFO - Started process 145 to run task
+[2025-05-30T13:32:16.870+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 's3_upload_test_dag', 'upload_simple_text_to_s3', 'manual__2025-05-30T13:32:14.867345+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/s3_upload_test_dag.py', '--cfg-path', '/tmp/tmpmhkufjjl']
+[2025-05-30T13:32:16.871+0000] {standard_task_runner.py:91} INFO - Job 11: Subtask upload_simple_text_to_s3
+[2025-05-30T13:32:16.888+0000] {task_command.py:426} INFO - Running <TaskInstance: s3_upload_test_dag.upload_simple_text_to_s3 manual__2025-05-30T13:32:14.867345+00:00 [running]> on host 11278d4fdc5c
+[2025-05-30T13:32:16.915+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='s3_upload_test_dag' AIRFLOW_CTX_TASK_ID='upload_simple_text_to_s3' AIRFLOW_CTX_EXECUTION_DATE='2025-05-30T13:32:14.867345+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-30T13:32:14.867345+00:00'
+[2025-05-30T13:32:16.915+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-05-30T13:32:16.922+0000] {logging_mixin.py:188} INFO - Attempting to upload to S3: s3://mlops-prj/airflow_tests/hello_from_dag.txt
+[2025-05-30T13:32:16.922+0000] {logging_mixin.py:188} INFO - File content: Hello S3 from Airflow DAG! This file was uploaded at 2025-05-30T22:32:16.922017+09:00.
+[2025-05-30T13:32:16.924+0000] {base.py:84} INFO - Using connection ID 'aws_s3_default' for task execution.
+[2025-05-30T13:32:16.924+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_s3_default', conn_type='aws') credentials retrieved from login and password.
+[2025-05-30T13:32:17.382+0000] {logging_mixin.py:188} INFO - Successfully uploaded to s3://mlops-prj/airflow_tests/hello_from_dag.txt
+[2025-05-30T13:32:17.385+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-05-30T13:32:17.385+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-05-30T13:32:17.393+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=s3_upload_test_dag, task_id=upload_simple_text_to_s3, run_id=manual__2025-05-30T13:32:14.867345+00:00, execution_date=20250530T133214, start_date=20250530T133216, end_date=20250530T133217
+[2025-05-30T13:32:17.425+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-05-30T13:32:17.436+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-30T13:32:17.437+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

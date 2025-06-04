@@ -1,0 +1,100 @@
+[2025-05-30T12:56:34.573+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-30T12:56:34.577+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: s3_upload_test_dag.upload_simple_text_to_s3 manual__2025-05-30T12:56:31.078055+00:00 [queued]>
+[2025-05-30T12:56:34.580+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: s3_upload_test_dag.upload_simple_text_to_s3 manual__2025-05-30T12:56:31.078055+00:00 [queued]>
+[2025-05-30T12:56:34.580+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-05-30T12:56:34.585+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): upload_simple_text_to_s3> on 2025-05-30 12:56:31.078055+00:00
+[2025-05-30T12:56:34.587+0000] {standard_task_runner.py:63} INFO - Started process 2068 to run task
+[2025-05-30T12:56:34.593+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 's3_upload_test_dag', 'upload_simple_text_to_s3', 'manual__2025-05-30T12:56:31.078055+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/s3_upload_test_dag.py', '--cfg-path', '/tmp/tmpqgy3l0uh']
+[2025-05-30T12:56:34.596+0000] {standard_task_runner.py:91} INFO - Job 5: Subtask upload_simple_text_to_s3
+[2025-05-30T12:56:34.651+0000] {task_command.py:426} INFO - Running <TaskInstance: s3_upload_test_dag.upload_simple_text_to_s3 manual__2025-05-30T12:56:31.078055+00:00 [running]> on host 11278d4fdc5c
+[2025-05-30T12:56:34.707+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='s3_upload_test_dag' AIRFLOW_CTX_TASK_ID='upload_simple_text_to_s3' AIRFLOW_CTX_EXECUTION_DATE='2025-05-30T12:56:31.078055+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-30T12:56:31.078055+00:00'
+[2025-05-30T12:56:34.708+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-05-30T12:56:34.721+0000] {logging_mixin.py:188} INFO - Attempting to upload to S3: s3://mlops-prj/airflow_tests/hello_from_dag.txt
+[2025-05-30T12:56:34.722+0000] {logging_mixin.py:188} INFO - File content: Hello S3 from Airflow DAG! This file was uploaded at 2025-05-30T21:56:34.721570+09:00.
+[2025-05-30T12:56:34.725+0000] {base_aws.py:582} WARNING - Unable to find AWS Connection ID 'aws_s3_default', switching to empty.
+[2025-05-30T12:56:34.726+0000] {base_aws.py:162} INFO - No connection ID provided. Fallback on boto3 credential strategy (region_name=None). See: https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html
+[2025-05-30T12:56:37.190+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-05-30T12:56:37.191+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/s3_upload_test_dag.py", line 25, in upload_text_to_s3_callable
+    s3_hook.load_string(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 135, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 89, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 1149, in load_string
+    self._upload_file_obj(f, key, bucket_name, replace, encrypt, acl_policy)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 1232, in _upload_file_obj
+    client.upload_fileobj(
+  File "/home/airflow/.local/lib/python3.12/site-packages/boto3/s3/inject.py", line 642, in upload_fileobj
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/futures.py", line 103, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/futures.py", line 266, in result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/tasks.py", line 139, in __call__
+    return self._execute_main(kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/tasks.py", line 162, in _execute_main
+    return_value = self._main(**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/upload.py", line 764, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 553, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 989, in _make_api_call
+    http, parsed_response = self._make_request(
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 1015, in _make_request
+    return self._endpoint.make_request(operation_model, request_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 119, in make_request
+    return self._send_request(request_dict, operation_model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 198, in _send_request
+    request = self.create_request(request_dict, operation_model)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 134, in create_request
+    self._event_emitter.emit(
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/hooks.py", line 412, in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/hooks.py", line 256, in emit
+    return self._emit(event_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/hooks.py", line 239, in _emit
+    response = handler(**kwargs)
+               ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/signers.py", line 105, in handler
+    return self.sign(operation_name, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/signers.py", line 195, in sign
+    auth.add_auth(request)
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/auth.py", line 418, in add_auth
+    raise NoCredentialsError()
+botocore.exceptions.NoCredentialsError: Unable to locate credentials
+[2025-05-30T12:56:37.201+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=s3_upload_test_dag, task_id=upload_simple_text_to_s3, run_id=manual__2025-05-30T12:56:31.078055+00:00, execution_date=20250530T125631, start_date=20250530T125634, end_date=20250530T125637
+[2025-05-30T12:56:37.210+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 5 for task upload_simple_text_to_s3 (Unable to locate credentials; 2068)
+[2025-05-30T12:56:37.219+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-05-30T12:56:37.234+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-30T12:56:37.234+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

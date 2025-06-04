@@ -1,0 +1,96 @@
+[2025-05-30T22:51:36.185+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-30T22:51:36.190+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: s3_parquet_read_dag.read_s3_parquet_file manual__2025-05-30T22:51:33.783528+00:00 [queued]>
+[2025-05-30T22:51:36.193+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: s3_parquet_read_dag.read_s3_parquet_file manual__2025-05-30T22:51:33.783528+00:00 [queued]>
+[2025-05-30T22:51:36.193+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-05-30T22:51:36.199+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): read_s3_parquet_file> on 2025-05-30 22:51:33.783528+00:00
+[2025-05-30T22:51:36.204+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 's3_parquet_read_dag', 'read_s3_parquet_file', 'manual__2025-05-30T22:51:33.783528+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/s3_parquet_read_dag.py', '--cfg-path', '/tmp/tmpdpx1j9u3']
+[2025-05-30T22:51:36.207+0000] {standard_task_runner.py:91} INFO - Job 16: Subtask read_s3_parquet_file
+[2025-05-30T22:51:36.207+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1127) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-05-30T22:51:36.208+0000] {standard_task_runner.py:63} INFO - Started process 1136 to run task
+[2025-05-30T22:51:36.240+0000] {task_command.py:426} INFO - Running <TaskInstance: s3_parquet_read_dag.read_s3_parquet_file manual__2025-05-30T22:51:33.783528+00:00 [running]> on host 11278d4fdc5c
+[2025-05-30T22:51:36.277+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='s3_parquet_read_dag' AIRFLOW_CTX_TASK_ID='read_s3_parquet_file' AIRFLOW_CTX_EXECUTION_DATE='2025-05-30T22:51:33.783528+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-30T22:51:33.783528+00:00'
+[2025-05-30T22:51:36.277+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-05-30T22:51:36.285+0000] {logging_mixin.py:188} INFO - Attempting to read Parquet file from S3 bucket: mlops-prj, Key: data/weather/preprocess/v1.0.0/2003.07.05_0000_2025.05.29_1800.parquet
+[2025-05-30T22:51:36.287+0000] {base.py:84} INFO - Using connection ID 'aws_s3_default' for task execution.
+[2025-05-30T22:51:36.288+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_s3_default', conn_type='aws') credentials retrieved from login and password.
+[2025-05-30T22:51:36.456+0000] {s3.py:1387} INFO - Downloading source S3 file from Bucket mlops-prj with path data/weather/preprocess/v1.0.0/2003.07.05_0000_2025.05.29_1800.parquet
+[2025-05-30T22:51:37.164+0000] {logging_mixin.py:188} INFO - File downloaded to: /tmp/airflow_tmp_fn82qrn0
+[2025-05-30T22:51:37.389+0000] {logging_mixin.py:188} INFO - Successfully read the Parquet file from S3! Here's the head:
+[2025-05-30T22:51:37.536+0000] {logging_mixin.py:188} INFO -       ObservationTime  StationID  WindDirection  ...  month  day  hour
+0 2003-07-05 00:00:00        108              5  ...      7    5     0
+1 2003-07-05 01:00:00        108              2  ...      7    5     1
+2 2003-07-05 02:00:00        108              5  ...      7    5     2
+3 2003-07-05 03:00:00        108              2  ...      7    5     3
+4 2003-07-05 04:00:00        108              5  ...      7    5     4
+
+[5 rows x 50 columns]
+[2025-05-30T22:51:37.536+0000] {logging_mixin.py:188} INFO - 
+DataFrame Info:
+[2025-05-30T22:51:37.546+0000] {logging_mixin.py:188} INFO - <class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1326 entries, 0 to 1325
+Data columns (total 50 columns):
+ #   Column               Non-Null Count  Dtype         
+---  ------               --------------  -----         
+ 0   ObservationTime      1326 non-null   datetime64[ns]
+ 1   StationID            1326 non-null   int64         
+ 2   WindDirection        1326 non-null   int64         
+ 3   WindSpeed            1326 non-null   float64       
+ 4   GustDirection        1326 non-null   int64         
+ 5   GustSpeed            1326 non-null   float64       
+ 6   GustTime             1326 non-null   int64         
+ 7   LocalPressure        1326 non-null   float64       
+ 8   SeaLevelPressure     1326 non-null   float64       
+ 9   PressureTrend        1326 non-null   int64         
+ 10  PressureChange       1326 non-null   float64       
+ 11  Temperature          1326 non-null   float64       
+ 12  DewPointTemperature  1326 non-null   float64       
+ 13  RelativeHumidity     1326 non-null   float64       
+ 14  VaporPressure        1326 non-null   float64       
+ 15  HourlyRainfall       1326 non-null   float64       
+ 16  DailyRainfall        1326 non-null   float64       
+ 17  CumulativeRainfall   1326 non-null   float64       
+ 18  RainfallIntensity    1326 non-null   float64       
+ 19  SnowDepth3Hr         1326 non-null   float64       
+ 20  DailySnowDepth       1326 non-null   float64       
+ 21  TotalSnowDepth       1326 non-null   float64       
+ 22  CurrentWeatherCode   1326 non-null   int64         
+ 23  PastWeatherCode      1326 non-null   int64         
+ 24  WeatherCode          1326 non-null   object        
+ 25  TotalCloudCover      1326 non-null   int64         
+ 26  MidLowCloudCover     1326 non-null   int64         
+ 27  LowestCloudHeight    1326 non-null   int64         
+ 28  CloudType            1326 non-null   object        
+ 29  UpperCloudType       1326 non-null   int64         
+ 30  MidCloudType         1326 non-null   int64         
+ 31  LowCloudType         1326 non-null   int64         
+ 32  Visibility           1326 non-null   int64         
+ 33  SunshineDuration     1326 non-null   float64       
+ 34  SolarRadiation       1326 non-null   float64       
+ 35  GroundCondition      1326 non-null   int64         
+ 36  GroundTemperature    1326 non-null   float64       
+ 37  SoilTemperature5cm   1326 non-null   float64       
+ 38  SoilTemperature10cm  1326 non-null   float64       
+ 39  SoilTemperature20cm  1326 non-null   float64       
+ 40  SoilTemperature30cm  1326 non-null   float64       
+ 41  SeaCondition         1326 non-null   int64         
+ 42  WaveHeight           1326 non-null   float64       
+ 43  MaxWindForce         1326 non-null   int64         
+ 44  PrecipitationData    1326 non-null   int64         
+ 45  ObservationType      1326 non-null   int64         
+ 46  year                 1326 non-null   int32         
+ 47  month                1326 non-null   int32         
+ 48  day                  1326 non-null   int32         
+ 49  hour                 1326 non-null   int32         
+dtypes: datetime64[ns](1), float64(24), int32(4), int64(19), object(2)
+memory usage: 497.4+ KB
+[2025-05-30T22:51:37.546+0000] {logging_mixin.py:188} INFO - 
+DataFrame Columns:
+[2025-05-30T22:51:37.546+0000] {logging_mixin.py:188} INFO - ['ObservationTime', 'StationID', 'WindDirection', 'WindSpeed', 'GustDirection', 'GustSpeed', 'GustTime', 'LocalPressure', 'SeaLevelPressure', 'PressureTrend', 'PressureChange', 'Temperature', 'DewPointTemperature', 'RelativeHumidity', 'VaporPressure', 'HourlyRainfall', 'DailyRainfall', 'CumulativeRainfall', 'RainfallIntensity', 'SnowDepth3Hr', 'DailySnowDepth', 'TotalSnowDepth', 'CurrentWeatherCode', 'PastWeatherCode', 'WeatherCode', 'TotalCloudCover', 'MidLowCloudCover', 'LowestCloudHeight', 'CloudType', 'UpperCloudType', 'MidCloudType', 'LowCloudType', 'Visibility', 'SunshineDuration', 'SolarRadiation', 'GroundCondition', 'GroundTemperature', 'SoilTemperature5cm', 'SoilTemperature10cm', 'SoilTemperature20cm', 'SoilTemperature30cm', 'SeaCondition', 'WaveHeight', 'MaxWindForce', 'PrecipitationData', 'ObservationType', 'year', 'month', 'day', 'hour']
+[2025-05-30T22:51:37.546+0000] {logging_mixin.py:188} INFO - 
+DataFrame shape: (1326, 50)
+[2025-05-30T22:51:37.548+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-05-30T22:51:37.549+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-05-30T22:51:37.551+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=s3_parquet_read_dag, task_id=read_s3_parquet_file, run_id=manual__2025-05-30T22:51:33.783528+00:00, execution_date=20250530T225133, start_date=20250530T225136, end_date=20250530T225137
+[2025-05-30T22:51:37.595+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-05-30T22:51:37.602+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-30T22:51:37.606+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

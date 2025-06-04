@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from .model import predict_temperature_after_1_hour
 import pandas as pd
 
-from .clothing_rules import get_recommendation_by_predicted_temp
+from .clothing_rules import get_cloth_sense
 
 app = FastAPI(title="Temperature Prediction API", version="0.1.0")
 
@@ -38,7 +38,7 @@ async def get_future_temp_prediction(
         return  {"error": "failed to predict temperature. Please check the input values."}
     
 
-    recommendation = get_recommendation_by_predicted_temp(predicted_temp)
+    recommendation = get_cloth_sense(predicted_temp)
     return {
         "location": location,
         "current_weather_input": {

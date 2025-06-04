@@ -1,0 +1,96 @@
+# GitHub Actions를 사용하여 CI 파이프라인 구축
+# Docker 이미지 자동 빌드, 푸쉬 / 도커허브 연동 / 스모크 테스트
+
+name: Debug Docker Build Workflow
+
+on:
+  push:
+    branches: [ main, jungmin ]
+
+jobs:
+  debug_file_structure_and_build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 코드 체크아웃: 저장소의 코드를 가져옴
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2.1 작업 공간 파일 목록 상세 출력 
+      - name: List files in workspace for DEBUG
+        run: |
+          echo "--- Repository Root Contents (현재 작업 디렉토리) ---"
+          ls -la
+          echo 
+
+          echo "--- 'mlops_team' Directory Contents (mlops_team 폴더 내용) ---"
+          if [ -d "mlops_team" ]; then # mlops_team 폴더가 있는지 먼저 확인
+            ls -la ./mlops_team
+          else
+            echo "'mlops_team' directory NOT FOUND at the root."
+          fi
+          echo 
+
+          echo "--- Finding 'Dockerfile' anywhere in the project (Dockerfile 찾기) ---"
+          find . -name "Dockerfile" -ls
+          echo 
+
+          echo "--- Finding 'requirements.txt' anywhere in the project (requirements.txt 찾기) ---"
+          find . -name "requirements.txt" -ls
+          echo
+
+      # 2.2 도커 허브 로그인 (Personal Access Token 사용)
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }} 
+      
+
+      # 3. Docker 이미지 빌드 시도
+      - name: build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./mlops_team
+          file: ./mlops_team/Dockerfile # 저장소 루트 기준 Dockerfile 경로
+          # push: false 
+          push: true # 빌드 후 푸시로 수정함
+          tags: | # github.sha: 깃헙 커밋 해시를 태그로 사용해 버전관리용으로 쓰자
+            welovecherry/weather-api:latest
+            welovecherry/weather-api:${{ github.sha }} 
+
+        # 4. 빌드 결과 확인
+      - name: Run container from built image for testing
+        run: |
+          docker run -d -p 8000:8000 --name weather-api-test welovecherry/weather-api:latest
+          echo "Waiting for the API to start..."
+          sleep 15 
+      
+      # 5. 스모크 테스트
+      - name: Perform smoke tests
+        run: |
+          echo "Running smoke tests at endpoint..." 
+          curl -f http://localhost:8000/
+          curl -f http://localhost:8000/docs
+      
+      # 6. 테스트용 컨테이너 중지 및 제거
+      - name: Stop and remove test container
+        if: always() 
+        run: |
+          # 중지 및 제거할 컨테이너 이름을 weather-api-test 로 수정
+          docker stop weather-api-test
+          docker rm weather-api-test
+
+  # 스크립트 실행 병렬로 돌리기
+  run_local_script_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set execute permission for script
+        run: chmod +x ./mlops_team/scripts/build-and-push.sh
+
+      - name: Run local build-and-push.sh script
+        run: ./mlops_team/scripts/build-and-push.sh
