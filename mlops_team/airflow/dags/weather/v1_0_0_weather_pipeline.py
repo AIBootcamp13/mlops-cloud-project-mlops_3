@@ -4,10 +4,14 @@ from airflow.operators.python import PythonOperator
 from airflow.utils.dates import days_ago
 import sys
 import os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append("/opt")
 
-from data.wearher.v1_0_0.preprocess import WeatherPreprocess
-from data.wearher.v1_0_0.ingest_raw_wearher import collect_weather_data_with_time
+# from data.wearher.v1_0_0.preprocess import WeatherPreprocess
+# from data.wearher.v1_0_0.ingest_raw_wearher import collect_weather_data_with_time
+from data.weather.v1_0_0.preprocess import WeatherPreprocess
+from data.weather.v1_0_0.ingest_raw_wearher import collect_weather_data_with_time
+
 
 def get_execution_time(**context):
     """실행 시간을 가져오는 함수"""
@@ -25,7 +29,7 @@ default_args = {
 }
 
 dag = DAG(
-    dag_id='wearher_data_pipeline',
+    dag_id='weather_data_pipeline',
     default_args=default_args,
     description='등록 후 최초 1회 실행 + 이후 1시간 간격 자동 실행',
     schedule_interval='0 * * * *',  # 매 시간 정각

@@ -22,4 +22,4 @@
 # CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 
-# 수정 중... 이건 옛날 경로 코드임
+# 아래에 새로운 Dockerfile.fastapi 작성
