@@ -1,0 +1,6 @@
+fastapi==0.110.0      
+uvicorn[standard]==0.29.0  # ASGI 서버
+pandas==2.2.2       
+scikit-learn==1.4.2  # 모델 추론용
+streamlit==1.35.0 
+matplotlib==3.8.4      # 그래프 그릴 때 유용

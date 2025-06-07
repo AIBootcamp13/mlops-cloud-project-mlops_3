@@ -41,7 +41,7 @@ RUN apt-get update && \
       apt-get install -y gcc libc-dev vim && \
       rm -rf /var/lib/apt/lists/*
 
-      # airflow 전용 requirements.txt 복사하도록 수정
+# airflow 전용 requirements.txt 복사하도록 수정
 COPY mlops_team/requirements/airflow.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
@@ -72,7 +72,7 @@ ENV PYTHONPATH="/opt/data"
 CMD ["/opt/airflow.start.sh"]
 
 
-# docker run -d \
+#  docker run -d \
 #   -p 8181:8181 \
 #   --env-file mlops_team/.env \
 #   --name mlops-airflow \

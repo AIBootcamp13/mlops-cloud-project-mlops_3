@@ -160,6 +160,8 @@ def update_weather_database():
     S3의 최신 데이터 이후부터 현재까지의 날씨 데이터를 업데이트합니다.
     """
     last_observation = get_latest_weather_data()
+    print("🔍 마지막 관측 시간:", last_observation)  # 추가!
+
     start_time = last_observation + timedelta(hours=1)
     end_time = datetime.now()
     
